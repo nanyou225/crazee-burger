@@ -5,18 +5,6 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault(event);
-
-    // //copie du state
-    // const newNameCopy = [...newName];
-
-    // //manipulation de la copie du state
-    // const id = new Date().getTime();
-    // const name = newName;
-    // newNameCopy.push({ id, name });
-
-    // //modifier du state par le setter dédié
-    // setNewName(newNameCopy);
-    // console.log(newName);
     alert(newName);
     setNewName("");
   };
