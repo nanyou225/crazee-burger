@@ -6,17 +6,18 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault(event);
 
-    //copie du state
-    const newNameCopy = [...newName];
+    // //copie du state
+    // const newNameCopy = [...newName];
 
-    //manipulation de la copie du state
-    const id = new Date().getTime();
-    const name = newName;
-    newNameCopy.push({ id, name });
+    // //manipulation de la copie du state
+    // const id = new Date().getTime();
+    // const name = newName;
+    // newNameCopy.push({ id, name });
 
-    //modifier du state par le setter dédié
-    setNewName(newNameCopy);
-    alert(newNameCopy);
+    // //modifier du state par le setter dédié
+    // setNewName(newNameCopy);
+    // console.log(newName);
+    alert(newName);
     setNewName("");
   };
 
@@ -29,7 +30,7 @@ function App() {
       <header className="App-header">
         <h1>CRAZEE BURGER</h1>
         <hr />
-        <h2>Bonjour bienvenu chez nous</h2>
+        <h2>bienvenu chez nous</h2>
         <h3>Connectez-vous</h3>
         <form action="submit" onSubmit={handleSubmit}>
           <input
@@ -37,7 +38,7 @@ function App() {
             onChange={handleChange}
             type={"text"}
             placeholder={"Entrez votre prénom..."}
-          ></input>
+          />
           <button>Accéder à mon espece</button>
         </form>
       </header>
