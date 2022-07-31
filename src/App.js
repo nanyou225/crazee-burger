@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomeScreen from "./components/HomeScreen";
 import OrderPage from "./components/OrderPage";
 import LoginPage from "./components/LoginPage";
 
@@ -10,9 +9,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Routes>
-            <Route path="/" element={<HomeScreen />} exact />
+            <Route path="/" element={<LoginPage />} exact />
             <Route path="/OrderPage/" element={<OrderPage />} />
-            <Route path="/LoginPage/" element={<LoginPage />} />
           </Routes>
         </header>
       </div>

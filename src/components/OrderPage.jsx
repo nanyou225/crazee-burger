@@ -6,7 +6,7 @@ export default function OrderPage() {
   return (
     <div className="App-OrderPage">
       <h2>Page de Commande</h2>
-      <h2>"Bonjour {newName}"</h2>
+      <h2>Bonjour {newName}</h2>
       <Link to="/">
         <button>Déconnection</button>
       </Link>
