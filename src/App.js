@@ -1,36 +1,20 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OrderPage from "./components/OrderPage";
+import LoginPage from "./components/pages/login/LoginPage";
 
 function App() {
-  const [newName, setNewName] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault(event);
-    alert(newName);
-    setNewName("");
-  };
-
-  const handleChange = (event) => {
-    setNewName(event.target.value);
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>CRAZEE BURGER</h1>
-        <hr />
-        <h2>bienvenu chez nous</h2>
-        <h3>Connectez-vous</h3>
-        <form action="submit" onSubmit={handleSubmit}>
-          <input
-            value={newName}
-            onChange={handleChange}
-            type={"text"}
-            placeholder={"Entrez votre prénom..."}
-          />
-          <button>Accéder à mon espece</button>
-        </form>
-      </header>
-    </div>
+    <Router>
+      {" "}
+      <div className="App">
+        <header className="App-header">
+          <Routes>
+            <Route path="/" element={<LoginPage />} exact />
+            <Route path="/OrderPage/" element={<OrderPage />} />
+          </Routes>
+        </header>
+      </div>
+    </Router>
   );
 }
 
