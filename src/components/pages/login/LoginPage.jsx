@@ -1,5 +1,23 @@
-import LoginForm from "../login/LoginForm";
 import styled from "styled-components";
+import {theme} from "../../../theme"
+import LoginForm from "./LoginForm"
+
+
+export default function LoginPage() {
+  return (
+    <LoginPageStyled>
+      <h1>CRAZEE</h1>
+      {/*<LogoStyled>
+        <img className="logo" src={"/src/images/logo.png"} alt="logo" />
+      </LogoStyled>*/}
+      <h1>BURGER</h1>
+      <h2>Bienvenue chez nous !</h2>
+      <hr />
+      <h3>Connectez-vous</h3>
+      <LoginForm />
+    </LoginPageStyled>
+  );
+}
 
 const LoginPageStyled = styled.div`
   height: 100vh;
@@ -13,8 +31,7 @@ const LoginPageStyled = styled.div`
   &::before {
     content: "";
     background: pink;
-    /* background-image: url("/src/images/fondEcranBurger.jpg"); */
-    background: url(/images/bg1.jpg) rgba(0, 0, 0, 0.7);
+    background: url(/images/fondEcranBurger.jpg) rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -44,7 +61,7 @@ const LogoStyled = styled.div`
     /* border: 1px solid green; */
     object-fit: contain;
     object-position: center;
-    height: ${(props) => props.theme.fonts.P6};
+    height: ${theme.fonts.P6};
     width: 80px; // for Safari and Firefox
     margin: 0 5px;
   }
@@ -52,28 +69,14 @@ const LogoStyled = styled.div`
     /* border: 1px solid pink; */
     display: inline;
     text-align: center;
-    color: ${(props) => props.theme.colors.primary};
-    font-size: ${(props) => props.theme.fonts.P4};
+    color: ${theme.colors.primary};
+    font-size: ${theme.fonts.P4};
     line-height: 1em;
-    font-weight: ${(props) => props.theme.weights.bold};
+    font-weight: ${theme.weights.bold};
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: "Amatic SC", cursive;
   }
 `;
 
-export default function LoginPage() {
-  return (
-    <LoginPageStyled>
-      <h1>CRAZEE</h1>{" "}
-      <LogoStyled>
-        <img className="logo" src={"/src/images/logo.png"} alt="logo" />
-      </LogoStyled>
-      <h1>BURGER</h1>
-      <h2>Bienvenue chez nous !</h2>
-      <hr />
-      <h3>Connectez-vous</h3>
-      <LoginForm />
-    </LoginPageStyled>
-  );
-}
+
