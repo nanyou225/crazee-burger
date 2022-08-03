@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.LoginPage {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+::before {
+  content: "";
+  background: pink;
+  /* background: url(/images/bg1.jpg) rgba(0, 0, 0, 0.7); */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.logo {
+  transform: scale(2.5);
+  /* img {
+  } */
+}
+
+hr {
+  border: 1.5px solid #f56a2c;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: white;
+  /* font-size: ${theme.fonts.P5}; */
+}
+
+h2 {
+  color: #8e8b8b;
+  margin: 20px 10px 10px;
+  /* color: ${theme.colors.white}; */
+  /* font-size: ${theme.fonts.P4}; */
+}
+
+button {
+  width: 100%;
+}
+
+
+.LoginPageForm {
+  text-align: center;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0px auto;
+  padding: 2.5rem 2rem;
+  border-radius: 5px;
+  font-family: "Amatic SC", cursive;
+}
+
+hr {
+  border: 1.5px solid #f56a2c;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: white;
+  /* font-size: ${theme.fonts.P5}; */
+}
+
+h2 {
+  color: #8e8b8b;
+  margin: 20px 10px 10px;
+  /* color: ${theme.colors.white}; */
+  /* font-size: ${theme.fonts.P4}; */
+}
+
+button {
+  width: 100%;
+}
+
