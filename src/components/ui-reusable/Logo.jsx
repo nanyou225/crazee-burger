@@ -2,6 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme";
 
+export default function Logo() {
+  return (
+    <LogoStyled>
+      <h1 className="logo">CRAZEE</h1>
+      <img className="logo" src="/images/logo.png" alt="logo" />
+      <h1 className="logo">BURGER</h1>
+    </LogoStyled>
+  );
+}
+
 const LogoStyled = styled.div`
   /* border: 1px solid red; */
   max-height: 100%;
@@ -30,13 +40,3 @@ const LogoStyled = styled.div`
     font-family: "Amatic SC", cursive;
   }
 `;
-
-export default function Logo() {
-  return (
-    <LogoStyled>
-      <h1 className="logo">CRAZEE</h1>
-      <img className="logo" src="/images/logo.png" alt="logo" />
-      <h1 className="logo">BURGER</h1>
-    </LogoStyled>
-  );
-}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../../../theme";
-import { IoIosArrowForward, IoMdContact } from "react-icons/io";
+import { IoChevronForward, IoPersonCircle } from "react-icons/io5"
 
 export default function LoginForm() {
   const [newName, setNewName] = useState("");
@@ -29,19 +29,18 @@ export default function LoginForm() {
       <hr />
       <h2>Connectez-vous</h2>
 
-      <div>
-        <TextInputStyled>
-          <IoMdContact />
-          <input
-            value={newName}
-            onChange={handleChange}
-            type={"text"}
-            placeholder={"Entrez votre prénom"}
-          />
-        </TextInputStyled>
-      </div>
+      <TextInputStyled>
+        <IoPersonCircle />
+        <input
+          value={newName}
+          onChange={handleChange}
+          type={"text"}
+          placeholder={"Entrez votre prénom"}
+        />
+      </TextInputStyled>
+
       <PrimaryButtonStyled>
-        Accéder à mon espece <IoIosArrowForward />
+        Accéder à mon espece <IoChevronForward />
       </PrimaryButtonStyled>
     </LoginFormStyled>
   );
