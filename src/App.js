@@ -18,10 +18,3 @@ function App() {
 }
 
 export default App;
-
-// *Gestion de formulaire*
-
-// 1-Création du formulaire
-// 2-Soumission du formailre (onSubmit / handleSubmit)
-// 3-collect des données
-// (sync descendante/ascendeante (onChange / handleChange))
